@@ -15,11 +15,9 @@ module OmniAuth
         options.authorize_params[:force_sign_in] = 'true' if options.force_sign_in?
       end
 
-      def uid
-        access_token.params[:user_id]
-      end
+      uid { access_token.params[:user_id] }
 
-      def info
+      info do
         {
           :nickname => raw_info['screen_name'],
           :name => raw_info['name'],
@@ -31,6 +29,10 @@ module OmniAuth
             'Twitter' => 'http://twitter.com/' + raw_info['screen_name'],
           }
         }
+      end
+
+      extra do
+        { :raw_info => raw_info }
       end
 
       def raw_info
