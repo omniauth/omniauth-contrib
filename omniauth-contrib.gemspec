@@ -2,14 +2,14 @@
 require File.expand_path('../lib/omniauth-contrib/version', __FILE__)
 
 Gem::Specification.new do |gem|
-  gem.add_dependency 'omniauth', '~> 1.0.0.alpha'
-  gem.add_dependency 'omniauth-oauth', '~> 1.0.0.alpha'
+  gem.add_dependency 'omniauth', '~> 1.0.0.pr2'
+  gem.add_dependency 'omniauth-oauth', '~> 1.0.0.pr2'
   gem.add_dependency 'multi_json'
 
-  gem.authors       = ["TODO: Write your name"]
+  gem.authors       = ["Michael Bleigh"]
   gem.email         = ["michael@intridea.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
+  gem.description   = %q{A temporary collection of OmniAuth strategies for 1.0}
+  gem.summary       = %q{A temporary collection of OmniAuth strategies for 1.0}
   gem.homepage      = ""
 
   gem.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
