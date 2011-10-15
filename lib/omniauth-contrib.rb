@@ -1,4 +1,5 @@
 require "omniauth-contrib/version"
+require "omniauth"
 
 module OmniAuth
   module Strategies
