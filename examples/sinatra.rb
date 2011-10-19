@@ -11,7 +11,6 @@ use Rack::Session::Cookie
 use OmniAuth::Builder do
   provider :twitter,  ENV['TWITTER_KEY'], ENV['TWITTER_SECRET']
   provider :github,   ENV['GITHUB_KEY'], ENV['GITHUB_SECRET']
-  provider :facebook, ENV['FACEBOOK_KEY'], ENV['FACEBOOK_SECRET']
 end
 
 get '/' do
@@ -19,7 +18,6 @@ get '/' do
   <ul>
     <li><a href='/auth/twitter'>Sign in with Twitter</a></li>
     <li><a href='/auth/github'>Sign in with GitHub</a></li>
-    <li><a href='/auth/facebook'>Sign in with Facebook</a></li>
   </ul>
   HTML
 end
