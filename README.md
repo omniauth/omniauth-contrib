@@ -8,7 +8,6 @@ source parent convert them into a real boy (er, gem).
 
 * Twitter
 * GitHub
-* Facebook
 
 ## Interested in Adopting a Strategy?
 
