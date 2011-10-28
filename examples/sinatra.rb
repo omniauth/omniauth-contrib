@@ -10,14 +10,12 @@ use Rack::Session::Cookie
 
 use OmniAuth::Builder do
   provider :twitter,  ENV['TWITTER_KEY'], ENV['TWITTER_SECRET']
-  provider :github,   ENV['GITHUB_KEY'], ENV['GITHUB_SECRET']
 end
 
 get '/' do
   <<-HTML
   <ul>
     <li><a href='/auth/twitter'>Sign in with Twitter</a></li>
-    <li><a href='/auth/github'>Sign in with GitHub</a></li>
   </ul>
   HTML
 end
