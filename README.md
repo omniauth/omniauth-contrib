@@ -7,7 +7,6 @@ source parent convert them into a real boy (er, gem).
 ## Strategies Available
 
 * Twitter
-* GitHub
 
 ## Interested in Adopting a Strategy?
 
