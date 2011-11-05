@@ -10,10 +10,6 @@ module OmniAuth
           :token_url => 'https://api.vkontakte.ru/oauth/token'
       }
 
-      def request_phase
-        super
-      end
-
       uid { access_token['user_id'] }
 
       info do
@@ -54,5 +50,3 @@ module OmniAuth
     end
   end
 end
-
-OmniAuth.config.add_camelization 'vkontakte', 'VKontakte'

@@ -3,8 +3,8 @@ require "omniauth"
 
 module OmniAuth
   module Strategies
-    autoload :Twitter,  'omniauth/strategies/twitter'
+    autoload :VKontakte,  'omniauth/strategies/vkontakte'
   end
 end
 
-OmniAuth.config.add_camelization 'github', 'GitHub'
+OmniAuth.config.add_camelization 'vkontakte', 'VKontakte'

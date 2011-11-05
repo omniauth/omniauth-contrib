@@ -6,7 +6,7 @@ source parent convert them into a real boy (er, gem).
 
 ## Strategies Available
 
-* Twitter
+* VKontakte (by @ivanovv)
 
 ## Interested in Adopting a Strategy?
 
